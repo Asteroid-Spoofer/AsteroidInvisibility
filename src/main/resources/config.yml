@@ -1,0 +1,35 @@
+# Asteroid Invisibility Extension Configuration
+# ------------------------------------------
+
+invisibility:
+  # Duration of the invisibility POTION EFFECT in seconds
+  # This controls how long the potion effect icon and particles last
+  # Set to -1 for infinite potion effect duration
+  # Example: 5 = potion effect lasts for 5 seconds
+  duration: 5
+
+  # Time until the player becomes visible again (in seconds)
+  # This controls when the player actually becomes visible again
+  # Set to -1 to stay invisible forever
+  #
+  # How it works with duration:
+  # - If both are equal: Effect ends and player becomes visible at the same time
+  # - If wears_out > duration: Player stays invisible even after potion effect ends
+  # - If wears_out < duration: Player becomes visible while potion effect is still active
+  # - If either is -1: That specific feature lasts forever
+  #
+  # Examples:
+  # duration: 5, wears_out: 5   = Player visible after 5s, effect ends after 5s
+  # duration: 10, wears_out: 5  = Player visible after 5s, effect ends after 10s
+  # duration: 5, wears_out: 10  = Player visible after 10s, effect ends after 5s
+  # duration: -1, wears_out: 5  = Player visible after 5s, effect lasts forever
+  # duration: 5, wears_out: -1  = Player never becomes visible, effect ends after 5s
+  seconds_until_wears_out: 5
+
+  # Chance for a fake player to become invisible (0-100)
+  # Example: 50 means 50% chance to become invisible
+  chance: 50
+
+# Debug settings
+# When enabled, logs information about invisibility applications
+debug: false

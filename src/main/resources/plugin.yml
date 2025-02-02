@@ -1,0 +1,4 @@
+name: AsteroidInvisibility
+version: '${version}'
+main: me.serbob.asteroidinvisibility.AsteroidInvisibility
+api-version: '1.13'
