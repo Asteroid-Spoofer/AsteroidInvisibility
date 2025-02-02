@@ -23,40 +23,6 @@
 5. Wait for review and approval
 6. Merge once approved
 
-# Installation
-<details>
-<summary>Gradle</summary>
-
-```gradle
-repositories {
-  maven { url 'https://jitpack.io' }
-}
-  
-dependencies {
-  implementation 'com.github.Asteroid-Spoofer:AsteroidAPI:Tag'
-}
-```
-</details>
-
-<details>
-<summary>Maven</summary>
-
-```xml
-<repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
-</repositories>
-  
-<dependency>
-    <groupId>com.github.Asteroid-Spoofer</groupId>
-    <artifactId>AsteroidAPI</artifactId>
-    <version>Tag</version>
-</dependency>
-```
-</details>
-
 # Contributing
 - Fork the repository
 - Follow the development workflow above
